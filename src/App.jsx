@@ -1,9 +1,12 @@
-import React from 'react'
+import ModleTest from "./custom-modal-popup/modal-test";
 
 function App() {
   return (
-    <div>App</div>
-  )
+    <div>
+      {/* Custom Model Component */}
+      <ModleTest />
+    </div>
+  );
 }
 
-export default App
+export default App;
