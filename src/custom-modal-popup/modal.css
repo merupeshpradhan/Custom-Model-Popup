@@ -1,11 +1,11 @@
-.model-test{
-    display: flex;
-    margin-top: 20px;
-    justify-content: center;
+.model-test {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
 }
 
-.model-test button{
-    padding: 10px;
+.model-test button {
+  padding: 10px;
 }
 
 .model {
@@ -24,8 +24,11 @@
   position: relative;
   background-color: #fefefe;
   margin: auto;
+  padding: 0;
   border: 1px solid red;
   width: 80%;
+  animation-name: animateModel;
+  animation-duration: 0.5s;
 }
 
 .close-modal-icon {
@@ -64,4 +67,16 @@
   padding: 15px 16px;
   background-color: #5cb85c;
   color: #fff;
+}
+
+@keyframes animateModel {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }

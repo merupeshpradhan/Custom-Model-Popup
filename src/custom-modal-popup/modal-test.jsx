@@ -17,7 +17,13 @@ export default function ModleTest() {
     <div className="model-test">
       <button onClick={handleToggelModelPopup}>Open Model Popup</button>
       {showModelPopup && (
-        <Modal onClose={onClose} body={<div>Customized body</div>} />
+        <Modal
+          id={"custom-id"}
+          header={<h1>Costomized Header</h1>}
+          footer={<h1>Costomized Footer</h1>}
+          onClose={onClose}
+          body={<div>Customized body</div>}
+        />
       )}
     </div>
   );
